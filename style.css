@@ -1,0 +1,347 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Lexend+Deca:wght@200&family=Lobster&family=Preahvihear&display=swap');
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-image: url("bg.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+}
+
+/* Container styles */
+.container {
+    box-sizing: border-box;
+    
+    height: 100vh;
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    padding: 32px;
+    font-family: sans-serif;
+    /* background-color: #fff; */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: -20px;
+    margin-top: 10vh;
+}
+
+.sidebar ul li {
+    margin-top: 6vh;
+    font-size: larger;
+    border-bottom: 3px dashed transparent;
+    border-top: 3px dashed transparent;
+    transition: border-bottom-color 1s ease-in;
+    transition: border-top-color 1s ease-in-out;
+
+}
+
+.sidebar ul li a {
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    /* margin-left: auto; */
+    box-sizing: border-box;
+    /* border: 2px solid blue;  */
+    text-decoration: none;
+    color: blue;
+    text-shadow:dark;
+    font-weight:550;
+}
+
+#logo {
+    margin:7px -37px;
+    /* font-family: serif;
+    font-size: x-large;
+    font-weight: bolder;
+
+
+    letter-spacing: 1px;
+    padding: 5px 20px; */
+    /* border: 2px solid blue;  */
+    /* text-decoration: none; */
+    /* background-color:#3c2654; */
+    background-color:rgb(102, 62, 2);
+    border-radius: 50%;
+}
+
+.sidebar ul li:hover {
+    /* border-bottom-color: white;
+    border-top-color: white; */
+    background-color: #e81034;
+    border-radius: 9%;
+}
+
+/* Main content styles */
+.main {
+    width: 87vw;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 1, 0.5);
+    display: flex;
+    flex-direction:column;
+}
+.hr{
+    position: fixed;
+    color: white;
+}
+
+/* Background overlay */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Info container styles */
+.infoContainer {
+    width: 80vw;
+    height: 65vh;
+    margin: auto;
+    margin-top: 12vh;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Developer info styles */
+.devInfo {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lobster', cursive;
+    box-sizing: border-box;
+
+}
+
+.hello {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #f90;
+    
+}
+
+.name {
+    letter-spacing: 3px;
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif
+}
+
+.about {
+    font-size: 35px;
+    margin-top: 20px;
+    color: #f90;
+    
+    
+}
+
+.moreabout {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-family: sans-serif
+}
+
+/* Button styles */
+button {
+    color: white;
+    background-color: #22224e;
+    border: 2px solid rgb(247, 241, 241);
+    border-radius: 9px;
+    font-size: 20px;
+    margin: 20px 5px;
+    padding: 4px 12px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttons button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.buttons button:hover,
+.buttons button a:hover {
+    background-color: white;
+    color: #1414b8;
+}
+
+/* Developer image styles */
+.devPic img {
+    height: 60vh;
+}
+
+/* Contact form styles */
+ .container {
+     display: flex;
+     justify-content: space-between;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     padding: 20px;
+ }
+
+ .contactform {
+     flex: 1;
+     padding: 20px;
+ }
+
+ .contactinfo {
+     flex: 1;
+     padding: 20px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ h2 {
+     text-align: center;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 10px;
+ }
+
+ input[type="text"],
+ input[type="tel"],
+ input[type="email"],
+ textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 15px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ button[type="submit"],
+ input[type="reset"] {
+     padding: 10px 20px;
+     background-color: #007BFF;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ button[type="submit"] {
+     margin-right: 10px;
+ }
+
+
+.contactform {
+    margin: auto;
+    background-color: rgba(32,70,103, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    /* width: 86%; */
+
+    color: white;
+    font-family: sans-serif;
+}
+
+.contactform h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contactform label {
+    font-weight: bold;
+}
+
+.contactform input[type="text"],
+.contactform input[type="tel"],
+.contactform input[type="email"],
+.contactform textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    
+}
+
+.contactform small {
+    display: block;
+    margin-top: -5px;
+    color: red;
+}
+.contactform input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+}
+
+.contactform button[type="submit"],
+.contactform input[type="reset"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contactform button[type="submit"]:hover,
+.contactform input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+.contactform input[type="checkbox"] {
+    margin-right: 5px;
+}
+.contactinfo{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.contactinfo h2{
+    font-size: 30px; font-family:  Georgia; color: #007BFF; margin-bottom: 20px;
+}
+.contactinfo p{
+    
+    letter-spacing:2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bolder;
+}
+/* Style the social media icons */
+.social-icons a {
+    display: inline-block;
+    /* Make the anchor tags inline blocks */
+    margin: 4px 10px;
+    /* Add spacing between the icons */
+}
+
+/* Define the dimensions for the icon images */
+.social-icons img {
+    width: 32px;
+    
+    /* Set the width */
+    height: 32px;
+    border-radius: 7px;
+    /* Set the height */
+}
