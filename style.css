@@ -200,6 +200,12 @@ button {
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
      padding: 20px;
  }
+ .contactContainer{
+     width: 87vw;
+     color: white;
+     text-shadow: 2px 2px 4px rgba(0, 0, 1, 0.5);
+     display: flex;
+ }
 
  .contactform {
      flex: 1;
